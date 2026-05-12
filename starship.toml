@@ -1,0 +1,55 @@
+# starship.toml
+
+add_newline = true
+palette = "default"
+
+format = """
+[╭](fg:separator)\
+$status\
+$directory\
+$cmd_duration\
+$line_break\
+[╰](fg:separator)\
+$character\
+"""
+
+###########################################
+
+[palettes.default]
+prompt_ok  = "#9f31e2"
+prompt_err = "#ff0000"
+icon       = "#161514"
+separator  = "#35312c"
+background = "#35312c"
+
+directory  = "#9f31e2"
+duration   = "#e26f31"
+status     = "#e23140"
+
+###########################################
+
+[character]
+success_symbol = "[─](fg:separator)[❯](fg:prompt_ok)"
+error_symbol   = "[─](fg:separator)[❯](fg:prompt_err)"
+
+[directory]
+format = "[](fg:#ff0000)[ ](fg:icon bg:#ff0000)[](fg:#ff0000 bg:background)[ M1SC0NF1G](fg:#56ff02 bg:background)[](fg:background)[─](fg:separator)[](fg:directory)[ ](fg:icon bg:directory)[](fg:directory bg:background)[ $path](bg:background)[](fg:background)"
+truncate_to_repo = false
+truncation_length = 0
+
+
+[status]
+format = "[─](fg:separator)[](fg:#ffe43d)[󰞇 ](fg:icon bg:#ffe43d)[](fg:#ffe43d bg:background)[ $status](bg:background)[](fg:background)[─](fg:separator)"
+pipestatus = true
+pipestatus_separator = "-"
+pipestatus_segment_format = "$status"
+pipestatus_format = "[─](fg:separator)[](fg:#f2bc07)[󰞇 ](fg:icon bg:#f2bc07)[](fg:#f2bc07 bg:background)[ $pipestatus](bg:background)[](fg:background)[─](fg:separator)"
+disabled = false
+
+[cmd_duration]
+format = "[─](fg:separator)[](fg:duration)[󱐋](fg:icon bg:duration)[](fg:duration bg:background)[ $duration](bg:background)[](fg:background)"
+min_time = 1000
+
+[time]
+format = "[](fg:duration)[󰥔](fg:icon bg:duration)[](fg:duration bg:background)[ $time](bg:background)[](fg:background)"
+disabled = false
