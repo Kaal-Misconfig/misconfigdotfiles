@@ -20,3 +20,7 @@
 # Swaync
 <img width="1048" height="720" alt="image" src="https://github.com/user-attachments/assets/08fb173a-8ea6-4e10-aa99-3b953608d216" />
 <img width="1145" height="797" alt="image" src="https://github.com/user-attachments/assets/b3726e28-ae72-4af8-98b3-27a2fcfefdcf" />
+
+# Rofi
+###### I have used https://github.com/adi1090x/rofi
+<img width="2560" height="1600" alt="image" src="https://github.com/user-attachments/assets/964fab52-f22b-49d2-9a4b-0d077baaefd8" />
