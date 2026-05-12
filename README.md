@@ -1,4 +1,7 @@
+<img width="2560" height="1600" alt="image" src="https://github.com/user-attachments/assets/ac29e111-1d24-48d5-91a0-161f3258ec08" />
+
 # misconfigdotfiles
+
 ###### My dotfiles for Arch Hyprland
 ###### This rice is on top of JaKooLit's Main Arch-Hyprland Rice :')
 
